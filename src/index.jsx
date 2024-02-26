@@ -4,29 +4,14 @@ import { useState } from "react";
 
 
 function App(){
-    const [ agreement, setAgree] = useState(false);
-    return agreement ? <Main /> : <Entry isAgree={setAgree} />;
+    return (
+        <div>
+            <form action="./php/message.php" method="post">
+                <input type="text" name="username"/>
+                <input type="submit" value="Click"/>
+            </form>
+        </div>
+    )
 }
 
 export default App;
-
-//Pages:
-
-function Entry({ isAgree }){
-    return (
-        <div>
-            <h1>Welcome to my Todo App</h1>
-            <button id="Entry-Button" onClick={()=>{
-                isAgree(true)
-            }}>Enter</button>
-        </div>
-    )
-}
-
-function Main(){
-    return (
-        <div>
-            <h1>Welcome to Main Page</h1>
-        </div>
-    )
-}
