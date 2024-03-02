@@ -1,6 +1,6 @@
-# Todo Application
+# Welcome to TaskForge
 
-A Basic Todo Application Using Dotnet and NodeJS
+TaskForge is a Todo Application created using vite react
 
 <h2 align="center">⚒️ Tool Used ⚒️</h2>
 <br/>
