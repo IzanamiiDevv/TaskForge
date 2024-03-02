@@ -26,7 +26,10 @@ const Main = () => {
       <input
         type="text"
         value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
+        onChange={(e) => {
+            console.log(e.target.value)
+            setInputValue(e.target.value);
+        }}
       />
       <button onClick={addElement}>Add Element</button>
       {elements.map((element) => (
