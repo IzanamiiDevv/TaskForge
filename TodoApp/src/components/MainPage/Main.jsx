@@ -31,12 +31,14 @@ const Main = () => {
         }}
       />
       <button onClick={()=>{
-        console.log("Hello")
         addElement()
       }}>Add Element</button>
-      {elements.map((element) => (
-        <Container key={element.id} obj={element} onDelete={deleteElement} />
-      ))}
+      {elements.map((element)=>{
+        console.log(element.content)
+        return(
+            <Container key={element.id} obj={element} onDelete={deleteElement} />
+        )
+      })}
     </div>
   );
 };
