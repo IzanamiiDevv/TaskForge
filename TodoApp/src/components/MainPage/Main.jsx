@@ -27,7 +27,6 @@ const Main = () => {
         type="text"
         value={inputValue}
         onChange={(e) => {
-            console.log(e.target.value)
             setInputValue(e.target.value);
         }}
       />
