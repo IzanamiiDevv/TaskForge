@@ -22,7 +22,7 @@ const Main = () => {
 
   return (
     <div>
-      <h1>React DOM Manipulation</h1>
+      <h1>I Love Programming</h1>
       <input
         type="text"
         value={inputValue}
