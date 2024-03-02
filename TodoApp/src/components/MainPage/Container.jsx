@@ -5,9 +5,7 @@ import './styles/container.css'
 function Container(attribute){
     return(
         <div id="container">
-            <button onClick={()=>{
-                console.log(attribute.obj.id)
-            }}>See ID</button>
+            <input type="checkbox" />
             <label>{attribute.obj.content}</label>
             <button onClick={()=>{
                 attribute.onDelete(attribute.obj.id)
