@@ -30,7 +30,10 @@ const Main = () => {
             setInputValue(e.target.value);
         }}
       />
-      <button onClick={addElement}>Add Element</button>
+      <button onClick={()=>{
+        console.log("Hello")
+        addElement()
+      }}>Add Element</button>
       {elements.map((element) => (
         <Container key={element.id} obj={element} onDelete={deleteElement} />
       ))}
