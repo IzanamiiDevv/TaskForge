@@ -8,6 +8,7 @@ It is A Fun Project to Create
 
 ## Setup:
 - open cmd or terminal
+- go to project directory
 
 <h2 align="center">⚒️ Tool Used ⚒️</h2>
 <br/>
