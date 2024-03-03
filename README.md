@@ -10,7 +10,7 @@ It is A Fun Project to Create
 - open cmd or terminal
 - go to project directory
 - run this command
-``` cmd
+``` terminal
 npm install
 ```
 
