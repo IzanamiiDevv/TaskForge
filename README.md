@@ -21,6 +21,7 @@ npm --prefix ./Client install
 ``` terminal
 npm start
 ```
+- then Enjoy
 
 <h2 align="center">⚒️ Tool Used ⚒️</h2>
 <br/>
