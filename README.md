@@ -17,6 +17,7 @@ and
 
 npm --prefix ./Client install
 ```
+-and start the project by 
 
 <h2 align="center">⚒️ Tool Used ⚒️</h2>
 <br/>
