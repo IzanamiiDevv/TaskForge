@@ -10,6 +10,9 @@ It is A Fun Project to Create
 - open cmd or terminal
 - go to project directory
 - run this command
+``` javascript
+npm install
+```
 
 <h2 align="center">⚒️ Tool Used ⚒️</h2>
 <br/>
