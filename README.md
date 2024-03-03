@@ -1,6 +1,6 @@
 # Welcome to TaskForge
 
-TaskForge is a Todo Application created using vite react
+TaskForge is a Todo Application created using vite react and ExpressJS
 
 <h2 align="center">⚒️ Tool Used ⚒️</h2>
 <br/>
