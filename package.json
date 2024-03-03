@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm-run-all server client",
-    "server": "node app.js",
+    "server": "start.bat",
     "client": "npm --prefix ./Client run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
