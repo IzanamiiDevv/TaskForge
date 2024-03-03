@@ -34,7 +34,6 @@ const Main = () => {
         addElement()
       }}>Add Element</button>
       {elements.map((element)=>{
-        console.log(element.content)
         return(
             <Container key={element.id} obj={element} onDelete={deleteElement} />
         )
