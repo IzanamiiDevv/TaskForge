@@ -12,6 +12,7 @@ const Main = () => {
       content: inputValue,
     };
     setElements([...elements, newElement]);
+    callFetch([...elements, newElement]);
     setInputValue('');
   };
 
@@ -41,5 +42,24 @@ const Main = () => {
     </div>
   );
 };
+
+function callFetch(data){
+  const body = {
+    datas : data
+  }
+  fetch('http://localhost:3000/testcall',{
+    method:"POST",
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(body)
+  })
+  .then((response)=>response.text())
+  .then(data => {
+    console.log(data)
+  }).catch(err => {
+    console.error(err)
+  })
+}
 
 export default Main;

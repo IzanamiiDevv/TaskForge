@@ -16,6 +16,19 @@ app.get('/',(req,res)=> {
     res.sendFile(path.join(publicPath,'index.html'));
 });
 
+app.post('/testcall',(req,res)=>{
+    const text = req.body;
+    const filePath = './data/data.json';
+    fs.writeFile(filePath, JSON.stringify(text.datas), (err) => {
+    if (err) {
+      console.error(err);
+      res.status(500).send('Internal Server Error');
+    } else {
+      res.send(`Data Successfully Stored!`);
+    }
+  });
+});
+
 app.listen(PORT, ()=>{
     console.log(`http://localhost:${PORT}`)
 })
