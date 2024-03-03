@@ -12,6 +12,7 @@ It is A Fun Project to Create
 - run this command
 ``` terminal
 npm install
+npm --prefix ./Client install
 ```
 
 <h2 align="center">⚒️ Tool Used ⚒️</h2>
