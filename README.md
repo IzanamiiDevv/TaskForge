@@ -2,7 +2,7 @@
 
 TaskForge is a Todo Application Created using Vite ReactJS and ExpressJS
 
-A Jasvascript Todo Application That Can Store Data to your local files with NodeJS File System Module
+A Jasvascript Todo Application That Can Store Data to your Local Files with NodeJS File System Module
 
 It is A Fun Project to Create
 
