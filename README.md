@@ -17,7 +17,10 @@ and
 
 npm --prefix ./Client install
 ```
--and start the project by 
+- and start the project by
+``` terminal
+npm start
+```
 
 <h2 align="center">⚒️ Tool Used ⚒️</h2>
 <br/>
