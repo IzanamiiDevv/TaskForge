@@ -4,12 +4,20 @@
   "description": "TaskForge is a Todo Application created using vite react",
   "main": "index.js",
   "scripts": {
+    "start": "npm-run-all server client",
+    "server": "node app.js",
+    "client": "npm --prefix ./Client run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
