@@ -12,6 +12,9 @@ It is A Fun Project to Create
 - run this command
 ``` terminal
 npm install
+
+and
+
 npm --prefix ./Client install
 ```
 
