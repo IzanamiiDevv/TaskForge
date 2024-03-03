@@ -17,7 +17,7 @@ and
 
 npm --prefix ./Client install
 ```
-- and start the project by
+- And Start the Project by
 ``` terminal
 npm start
 ```
