@@ -9,7 +9,7 @@ It is A Fun Project to Create
 ## Setup:
 - Open CMD or Terminal
 - Go to Project Directory
-- run this command
+- Run this Command
 ``` terminal
 npm install
 
