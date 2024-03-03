@@ -7,7 +7,7 @@ A Jasvascript Todo Application That Can Store Data to your Local Files with Node
 It is A Fun Project to Create
 
 ## Setup:
-- open cmd or terminal
+- Open CMD or Terminal
 - go to project directory
 - run this command
 ``` terminal
