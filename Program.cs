@@ -1,16 +1,17 @@
 ﻿using System;
-using Test;
+using NPMController;
 
 class Program
 {
     public static void Main(string[] args)
     {
-        Ancor ancor = new Ancor();
-
-        ancor.MissYou();
-        Ancor.Test();
         Console.BackgroundColor = ConsoleColor.Green;
         Console.WriteLine("Hello Too");
+        Console.ReadKey();
+
+        string path = System.IO.Path.GetFullPath(@"../../../start.bat");
+
+        NPM.RunTerminalCommand(path);
         Console.ReadKey();
     }
 }

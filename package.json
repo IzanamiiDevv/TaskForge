@@ -8,7 +8,7 @@
 
     "stream": "npm-run-all server client",
     "server": "server.bat",
-    "client": "npm --prefix ./Client run dev",
+    "client": "client.bat",
 
     "build": "npm-run-all buildConsole buildServer buildClient",
     "buildConsole":"dotnet build",

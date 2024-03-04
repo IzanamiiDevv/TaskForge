@@ -1,2 +1,2 @@
 @echo off
-start cmd /k "dotnet run"
+start cmd /k "npm run stream"
