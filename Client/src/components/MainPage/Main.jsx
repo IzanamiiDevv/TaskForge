@@ -1,10 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Container from './Container';
 import { v4 as uuidv4 } from 'uuid';
 
 const Main = () => {
   const [inputValue, setInputValue] = useState('');
   const [elements, setElements] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://localhost:3000/testLoad');
+        if (response.ok) {
+          const data = await response.json();
+          setElements(data.datas || []);
+        } else {
+          console.error('Failed to fetch data from the server');
+        }
+      } catch (error) {
+        console.error('Error fetching data from the server:', error.message);
+      }
+    };
+    fetchData();
+  }, []);
 
   const addElement = () => {
     const newElement = {

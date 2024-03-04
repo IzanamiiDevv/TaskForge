@@ -29,15 +29,29 @@ app.post('/testcall',(req,res)=>{
   });
 });
 
-app.get('/testLoad',(req,res)=>{
-  fs.readFile('./data/data.json',(err,data)=>{
-    const content = {
-      datas : data
+app.get('/testLoad', (req, res) => {
+  fs.readFile('./data/data.json', (err, data) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).send('Server Error');
     }
-    if(err){
-      res.status(500).send('Server Error')
+
+    try {
+      const jsonData = JSON.parse(data);
+      const content = {
+        datas: jsonData
+      };
+
+      // Specify content type in the response headers
+      res.setHeader('Content-Type', 'application/json');
+
+      // Alternatively, you can use res.type('json') to set the content type
+
+      res.send(content);
+    } catch (error) {
+      console.error('Error parsing JSON:', error);
+      res.status(500).send('Error parsing JSON');
     }
-    res.send(content)
   });
 });
 
