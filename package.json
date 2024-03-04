@@ -1,5 +1,5 @@
 {
-  "name": "TaskForge",
+  "name": "taskforge",
   "version": "1.0.0",
   "description": "TaskForge is a Todo Application created using vite react",
   "main": "index.js",
