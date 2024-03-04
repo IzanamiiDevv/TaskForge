@@ -29,6 +29,18 @@ app.post('/testcall',(req,res)=>{
   });
 });
 
+app.get('/testLoad',(req,res)=>{
+  fs.readFile('./data/data.json',(err,data)=>{
+    const content = {
+      datas : data
+    }
+    if(err){
+      res.status(500).send('Server Error')
+    }
+    res.send(content)
+  });
+});
+
 app.listen(PORT, ()=>{
     console.log(`http://localhost:${PORT}`)
 })
