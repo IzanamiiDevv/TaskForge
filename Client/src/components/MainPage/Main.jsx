@@ -36,6 +36,7 @@ const Main = () => {
   const deleteElement = (id) => {
     const updatedElements = elements.filter((element) => element.id !== id);
     setElements(updatedElements);
+    callFetch(updatedElements);
   };
 
   return (
