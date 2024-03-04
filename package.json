@@ -1,12 +1,20 @@
 {
-  "name": "todo-app",
+  "name": "TaskForge",
   "version": "1.0.0",
   "description": "TaskForge is a Todo Application created using vite react",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all server client",
+    "start": "dotnet run",
+
+    "stream": "npm-run-all server client",
     "server": "start.bat",
     "client": "npm --prefix ./Client run dev",
+
+    "build": "npm-run-all buildConsole buildServer buildClient",
+    "buildConsole":"dotnet build",
+    "buildServer":"npm install",
+    "buildClient":"npm --prefix ./Client install",
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   
