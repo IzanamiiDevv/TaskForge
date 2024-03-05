@@ -9,7 +9,7 @@ namespace Test
             Console.WriteLine("Hello World");
         }
         
-        public void MissYou()
+        public void Test2()
         {
             Console.WriteLine("Gagi ka");
         }
